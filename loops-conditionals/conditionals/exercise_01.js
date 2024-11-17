@@ -7,3 +7,15 @@
 
     HINT: The modulus operator ( % ) is your friend.
 */
+
+let numberToCheck = -16;
+
+if (typeof numberToCheck === "number") {
+  if (numberToCheck % 2 === 0) {
+    console.log("Number " + numberToCheck + " is even.");
+  } else {
+    console.log("Number " + numberToCheck + " is odd.");
+  }
+} else {
+  console.log("The variable is not a number!");
+}

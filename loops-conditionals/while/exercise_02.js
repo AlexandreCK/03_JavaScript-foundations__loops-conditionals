@@ -18,3 +18,18 @@
     You made it!
     All done!
 */
+
+let loop = 1;
+
+while (loop <= 100) {
+  if (loop === 50) {
+    console.log("Halfway there!");
+  } else if (loop === 100) {
+    console.log("You made it!");
+  } else if (loop % 10 === 0) {
+    console.log("Checkpoint! " + loop);
+  }
+  loop++;
+}
+
+console.log("All done!");
