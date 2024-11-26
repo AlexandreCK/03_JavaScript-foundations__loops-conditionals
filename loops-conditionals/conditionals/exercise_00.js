@@ -15,9 +15,13 @@ let animal = "capybara";
 
 if (animal === "cat") {
   console.log("Meow!");
-} else if (animal === "dog") {
+}
+
+if (animal === "dog") {
   console.log("Woof!");
-} else {
+}
+
+if (animal !== "cat" && animal !== "dog") {
   console.log("Must be an alien");
 }
 

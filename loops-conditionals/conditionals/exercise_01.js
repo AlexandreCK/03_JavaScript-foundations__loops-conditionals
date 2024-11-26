@@ -13,9 +13,12 @@ let numberToCheck = -16;
 if (typeof numberToCheck === "number") {
   if (numberToCheck % 2 === 0) {
     console.log("Number " + numberToCheck + " is even.");
-  } else {
+  }
+  if (numberToCheck % 2 !== 0) {
     console.log("Number " + numberToCheck + " is odd.");
   }
-} else {
+}
+
+if (typeof numberToCheck !== "number") {
   console.log("The variable is not a number!");
 }

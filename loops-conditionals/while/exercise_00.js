@@ -15,7 +15,8 @@ while (!loggedIn) {
   if (loopCounter < 3) {
     console.log("Incorrect login credentials");
     loopCounter++;
-  } else {
+  }
+  if (loopCounter >= 3) {
     loggedIn = true;
   }
 }

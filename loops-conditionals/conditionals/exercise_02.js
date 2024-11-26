@@ -31,9 +31,8 @@ function checkAge() {
 
 checkAge();
 
-
 // JS checks in descending order the "if" statements, since the age >= 3 one fulfills the condition, it executes it.
-// The "return" stops it from checking the next ones. 
+// The "return" stops it from checking the next ones.
 // It should be done from bigger to smaller and also with "if else" statements.
 
 let newAge = 24;
@@ -41,13 +40,17 @@ let newAge = 24;
 function newCheckAge() {
   if (newAge >= 18) {
     console.log("Most places consider you an adult.");
-  } else if (newAge >= 13) {
+  }
+  if (newAge >= 13 && newAge < 18) {
     console.log("Nice, you're a teenager!");
-  } else if (newAge >= 3) {
+  }
+  if (newAge >= 3 && newAge < 13) {
     console.log("You are in elementary school, kid.");
-  } else if (newAge < 3) {
+  }
+  if (newAge < 3) {
     console.log("You're just a baby!");
-  } else {
+  }
+  if (newAge < 0 || typeof newAge !== "number") {
     console.log("What? How did this happen!?");
   }
 }

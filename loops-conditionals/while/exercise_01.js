@@ -12,7 +12,9 @@ while (counter < 40) {
   counter++;
   if (counter % 2 === 0) {
     evenNums.push(counter);
-  } else {
+  }
+
+  if (counter % 2 !== 0) {
     oddNums.push(counter);
   }
 }
